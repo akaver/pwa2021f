@@ -1,8 +1,9 @@
 {
+    "manifest_version": "0.1.1",
     "name": "PWA",
     "description": "PWA",
     "short_name": "PWA",
-    "start_url": "/?pwa=1",
+    "start_url": "/pwa2021f/?pwa=1",
     "scope": "/",
     "display": "standalone",
     "background_color": "#F00",
