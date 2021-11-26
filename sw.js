@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = "cache_0.1.1";
+const CACHE = "cache_0.1.2";
 const PREFETCH = [
     './css/materialize.css',
     './css/materialize.min.css',
@@ -43,7 +43,7 @@ const fetchFn = async (event) => {
             // get fresh copy from net
             const response = await fetch(event.request);
             // save it to cache
-            cache.put(event.request, response);
+            cache.put(event.request, response.clone());
             // return fresh data
             return response;
         }
